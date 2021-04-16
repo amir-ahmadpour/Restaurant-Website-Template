@@ -185,7 +185,7 @@
 }
 
 
-/*Start Footer Style*/
+/*------------Start Footer Style------------*/
 .footer {
     background-color: black;
     background-image: url("../images/footer-bg.jpg");
@@ -234,26 +234,25 @@
     z-index: 0;
 }
 
-.subscribe input[type=email]{
+.subscribe input[type=email] {
     width: 100%;
     direction: rtl !important;
     margin-bottom: 16px;
-    padding:8px 0;
-    background: linear-gradient(45deg,#3C3B3F,#605C3C);
+    padding: 8px 0;
+    background: linear-gradient(45deg, #3C3B3F, #605C3C);
     color: white;
     text-indent: 20px;
-    font-family: "Nazanin",sans-serif;
+    font-family: "Nazanin", sans-serif;
     font-size: 1.4rem;
 
 }
-.subscribe input[type=email]::placeholder{
+
+.subscribe input[type=email]::placeholder {
     color: white;
 }
 
-/*End Footer Style*/
 
-
-/*Start Header Style All Pages*/
+/*------------Start Header Style All Pages------------*/
 .landing-img-fix {
     position: relative;
     top: 0;
@@ -300,8 +299,6 @@
     z-index: 1;
     color: white;
 }
-
-/*End About Us Style Page*/
 
 
 /*background-image: linear-gradient( 109.6deg,  rgba(72,200,160,1) 11.2%, rgba(32,40,48,1) 91.3% );*/
