@@ -141,6 +141,7 @@
 .icon-img {
     width: 130px;
     height: 130px;
+    margin-left: 50px;
 }
 
 
@@ -301,4 +302,9 @@ background-color: rgba(0, 0, 0, 0.7);
 }
 
 
-/*background-image: linear-gradient( 109.6deg,  rgba(72,200,160,1) 11.2%, rgba(32,40,48,1) 91.3% );*/
+@media screen and (max-width:992px) {
+    .icon-img{
+        width: 100px;
+        height: 100px;
+    }
+}
