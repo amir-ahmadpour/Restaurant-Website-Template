@@ -27,9 +27,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-    font-family: Nazanin;
-    font-weight: 600;
+body {
+  font-family: Nazanin;
+  font-weight: 600;
 }
 
 * h1,
@@ -44,7 +44,7 @@ h6 {
   margin: 16px 0;
 }
 
-/*------------START HEADER STYLE------------*/
+/*------------Start Header Style------------*/
 .default {
   font-family: "Nastaliq";
   font-size: 1.2rem;
@@ -86,8 +86,8 @@ h6 {
   margin: 0 auto;
 }
 
-/*------------START ABOUT US BOX STYLE------------*/
-.about-us-box {
+/*------------Start About Us Box Style------------*/
+.about-us-sec {
   width: 100%;
   background-image: url("../images/about-us-box-bg.jpg");
   background-repeat: no-repeat;
@@ -95,9 +95,9 @@ h6 {
   background-position: center;
   padding: 120px 0;
 }
-.razawa-img img{
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px darkgray,-3px -3px 8px black;
+.razawa-img img {
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px darkgray, -3px -3px 8px black;
 }
 
 /*------------Text Section Style------------*/
@@ -127,6 +127,7 @@ h6 {
   background-position: center;
 }
 
+/*------------ Start Social Menu Stayle ------------*/
 .tab-pane .card {
   margin-bottom: 20px;
   position: relative;
@@ -147,7 +148,7 @@ h6 {
   padding: 12px 12px;
   transition: all 0.3s ease;
 }
-
+/*------------ Start Gallery Section Style ------------*/
 .gallery-boxes {
   border: 2px solid red !important;
   margin-bottom: 20px;
@@ -157,12 +158,6 @@ h6 {
   transform: scale(1.03, 1.03);
   transition: all 0.3s ease-in-out;
   border: none !important;
-}
-
-.icon-img {
-  width: 130px;
-  height: 130px;
-  margin-left: 50px;
 }
 
 .carousel-img {
@@ -175,10 +170,6 @@ h6 {
   border-radius: 50%;
   box-shadow: 0 0 2px #5f5f5f, 0 0 0 5px #ecf0f3, 8px 8px 15px #afaaa7,
     -8px -8px 15px #fff;
-}
-
-.carousel-item p {
-  margin-bottom: 80px;
 }
 
 /*------------Contact With Us Style------------*/
@@ -209,52 +200,20 @@ h6 {
 
 /*------------Start Footer Style------------*/
 .footer {
+  width: 100%;
   background-color: black;
   background-image: url("../images/footer-bg.jpg");
   background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-clip: initial;
-  background-origin: initial;
   background-size: cover;
   background-position: center;
   position: relative;
-}
-
-.footer {
-  position: relative;
-  /*padding: 200px 0;*/
 }
 
 .bg-img-box {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
+ background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
 }
 
-.img-fix-footer {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-image: url("../images/qt-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.background-dark-footer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 0;
-}
 
 .subscribe input[type="email"] {
   width: 100%;
@@ -270,6 +229,24 @@ h6 {
 
 .subscribe input[type="email"]::placeholder {
   color: white;
+}
+
+.social-network {
+  display: flex;
+}
+.social-network-icon {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-network-icon a svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgb(230, 253, 100);
+  box-shadow: -3px -3px 8px rgb(44, 44, 44), 3px 3px 8px rgb(255, 255, 255);
 }
 
 /*------------Start Header Style All Pages------------*/
@@ -320,7 +297,7 @@ h6 {
   color: white;
 }
 
-                     /* Extra small devices (phones, 568px and down) */
+/*------------ Extra small devices (phones, 568px and down) ------------*/
 @media screen and (max-width: 568px) {
   .carousel-control-next-icon,
   .carousel-control-prev-icon {
@@ -336,7 +313,7 @@ h6 {
     width: 50px;
     height: 50px;
   }
-  .about-us-box {
+  .about-us-sec {
     padding: 60px;
   }
   .box-title h1 {
@@ -347,7 +324,7 @@ h6 {
   }
 }
 
-                        /* Small devices (portrait tablets and large phones, 568px and up) */
+/*------------ Small devices (portrait tablets and large phones, 568px and up) ------------*/
 @media screen and (min-width: 568px) {
   .carousel-control-next-icon,
   .carousel-control-prev-icon {
@@ -363,7 +340,7 @@ h6 {
     width: 80px;
     height: 80px;
   }
-  .about-us-box {
+  .about-us-sec {
     padding: 60px;
   }
   .box-title h1 {
@@ -374,29 +351,28 @@ h6 {
   }
 }
 
-              /* Medium , Large , Extra large devices (landscape tablets,laptops/desktops,large laptops and desktops, 768px and up) */
+/*------------ Medium , Large , Extra large devices (landscape tablets,laptops/desktops,large laptops and desktops, 768px and up) ------------*/
 @media screen and (min-width: 768px) {
-
-    .carousel-control-next-icon,
-    .carousel-control-prev-icon {
-      width: 40px;
-      height: 40px;
-    }
-    .carousel-indicators [data-bs-target] {
-      border: 1px solid white;
-      width: 12px;
-      height: 45px;
-      background-color: rgba(0, 0, 0, 0.1);
-    }
-    .icon-img {
-      width: 120px;
-      height: 120px;
-    }
-    .box-title h1 {
-      font-size: 2.3rem;
-      margin-bottom: 50px;
-    }
-    .box-title p {
-      font-size: 1.4rem;
-    }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .carousel-indicators [data-bs-target] {
+    border: 1px solid white;
+    width: 12px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .icon-img {
+    width: 120px;
+    height: 120px;
+  }
+  .box-title h1 {
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+  }
+  .box-title p {
+    font-size: 1.4rem;
+  }
 }
