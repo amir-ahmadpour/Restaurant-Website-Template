@@ -1,310 +1,402 @@
 @font-face {
-    font-family: "Nazanin";
-    src: url("../fonts/Nazanin.eot") format("eot"),
+  font-family: "Nazanin";
+  src: url("../fonts/Nazanin.eot") format("eot"),
     url("../fonts/Nazanin.ttf") format("ttf"),
     url("../fonts/Nazanin.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Yekan";
-    src: url("../fonts/Yekan.woff2") format("woff2");
+  font-family: "Yekan";
+  src: url("../fonts/Yekan.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "Nastaliq";
-    src: url("../fonts/IranNastaliq.ttf") format("ttf");
+  font-family: "Nastaliq";
+  src: url("../fonts/IranNastaliq.ttf") format("ttf");
 }
 
 @font-face {
-    font-family: "Koodak";
-    src: url("../fonts/KoodakBold.eot") format("eot"),
+  font-family: "Koodak";
+  src: url("../fonts/KoodakBold.eot") format("eot"),
     url("../fonts/KoodakBold.ttf") format("eot"),
     url("../fonts/KoodakBold.woff") format("woff");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: Nazanin;
+    font-weight: 600;
 }
 
-* h1, h2, h3, h4, h5, h6 {
-    font-family: "Nastaliq", Tahoma, monospace;
-    line-height: 3rem;
-    margin: 16px 0;
+* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Yekan";
+  font-weight: 800;
+  line-height: 3rem;
+  margin: 16px 0;
 }
 
 /*------------START HEADER STYLE------------*/
 .default {
-    font-family: "Nastaliq", sans-serif;
-    font-size: 1.2rem;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    background: linear-gradient(45deg, #659999, #f4791f);
+  font-family: "Nastaliq";
+  font-size: 1.2rem;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background: linear-gradient(45deg, #659999, #f4791f);
 }
 
 .carousel-indicators [data-bs-target] {
-    border: 2px solid white;
-    border-radius: 5px;
-    width: 12px;
-    height: 45px;
-    background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 12px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .carousel-indicators [data-bs-target].active {
-    background-color: crimson;
-    border: 2px solid crimson;
+  background-color: crimson;
+  border: 2px solid crimson;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: crimson;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: crimson;
 }
 
 .header-title {
-    position: absolute;
-    top: 20%;
-    z-index: 2;
-    color: white;
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  z-index: 2;
+  color: white;
+}
+.box-title {
+  width: 60%;
+  margin: 0 auto;
 }
 
 /*------------START ABOUT US BOX STYLE------------*/
 .about-us-box {
-    background-image: url("../images/about-us-box-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+  width: 100%;
+  background-image: url("../images/about-us-box-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
 }
-
+.razawa-img img{
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px darkgray,-3px -3px 8px black;
+}
 
 /*------------Text Section Style------------*/
 .sec-text {
-    position: relative;
-    padding: 100px 0;
+  position: relative;
+  padding: 100px 0;
 }
 
 .wrap {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .img-fix {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-image: url("../images/qt-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-image: url("../images/qt-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .tab-pane .card {
-    margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 .card:hover .description {
-    bottom: 0;
+  bottom: 0;
 }
 
 .description {
-    position: absolute;
-    left: 0;
-    bottom: -100%;
-    right: 0;
-    height: 100%;
-    background-color: rgba(207, 166, 113, 0.7);
-    padding: 12px 12px;
-    transition: all 0.3s ease;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  right: 0;
+  height: 100%;
+  background-color: rgba(207, 166, 113, 0.7);
+  padding: 12px 12px;
+  transition: all 0.3s ease;
 }
 
 .gallery-boxes {
-    border: 2px solid red !important;
-    margin-bottom: 20px;
+  border: 2px solid red !important;
+  margin-bottom: 20px;
 }
 
 .gallery-boxes:hover {
-    transform: scale(1.03, 1.03);
-    transition: all 0.3s ease-in-out;
-    border: none !important;
+  transform: scale(1.03, 1.03);
+  transition: all 0.3s ease-in-out;
+  border: none !important;
 }
 
 .icon-img {
-    width: 130px;
-    height: 130px;
-    margin-left: 50px;
+  width: 130px;
+  height: 130px;
+  margin-left: 50px;
 }
 
-
 .carousel-img {
-    width: 200px;
+  width: 200px;
 }
 
 .rounded-circle {
-    height: 200px;
-    border: 16px solid gray;
-    border-radius: 50%;
-    box-shadow: 0 0 2px #5f5f5f, 0 0 0 5px #ecf0f3,
-    8px 8px 15px #afaaa7, -8px -8px 15px #fff;
+  height: 200px;
+  border: 16px solid gray;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #5f5f5f, 0 0 0 5px #ecf0f3, 8px 8px 15px #afaaa7,
+    -8px -8px 15px #fff;
 }
 
 .carousel-item p {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 /*------------Contact With Us Style------------*/
 .address {
-    width: 100%;
-    background: linear-gradient(220deg, #ad5389, #3c1053);
-    border-radius: 40px;
-    padding: 20px;
-    color: white;
-    box-shadow: inset 8px 10px 8px #ad5389, inset -15px -10px 10px #3c1053;
+  width: 100%;
+  background: linear-gradient(220deg, #ad5389, #3c1053);
+  border-radius: 40px;
+  padding: 20px;
+  color: white;
+  box-shadow: inset 8px 10px 8px #ad5389, inset -15px -10px 10px #3c1053;
 }
 
-.fa-phone-volume, .fa-map-marker-alt, .fa-envelope {
-    color: orangered;
-    border: 2px solid white;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 50%;
-    box-shadow: 0 0 2px #ad5389, 0 0 0 5px #3c1053,
-    8px 8px 15px #3c1053, -8px -8px 15px #ad5389;
+.fa-phone-volume,
+.fa-map-marker-alt,
+.fa-envelope {
+  color: orangered;
+  border: 2px solid white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #ad5389, 0 0 0 5px #3c1053, 8px 8px 15px #3c1053,
+    -8px -8px 15px #ad5389;
 }
 
 .svg-inline--fa.fa-w-12 {
-    width: 1em;
+  width: 1em;
 }
-
 
 /*------------Start Footer Style------------*/
 .footer {
-    background-color: black;
-    background-image: url("../images/footer-bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-clip: initial;
-    background-origin: initial;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  background-color: black;
+  background-image: url("../images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-clip: initial;
+  background-origin: initial;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 .footer {
-    position: relative;
-    /*padding: 200px 0;*/
+  position: relative;
+  /*padding: 200px 0;*/
 }
 
 .bg-img-box {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .img-fix-footer {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-image: url("../images/qt-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-image: url("../images/qt-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .background-dark-footer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-background-color: rgba(0, 0, 0, 0.7);
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 0;
 }
 
-.subscribe input[type=email] {
-    width: 100%;
-    direction: rtl !important;
-    margin-bottom: 16px;
-    padding: 8px 0;
-    background: linear-gradient(45deg, #3C3B3F, #605C3C);
-    color: white;
-    text-indent: 20px;
-    font-family: "Nazanin", sans-serif;
-    font-size: 1.4rem;
-
+.subscribe input[type="email"] {
+  width: 100%;
+  direction: rtl !important;
+  margin-bottom: 16px;
+  padding: 8px 0;
+  background: linear-gradient(45deg, #3c3b3f, #605c3c);
+  color: white;
+  text-indent: 20px;
+  font-family: "Nazanin", sans-serif;
+  font-size: 1.4rem;
 }
 
-.subscribe input[type=email]::placeholder {
-    color: white;
+.subscribe input[type="email"]::placeholder {
+  color: white;
 }
-
 
 /*------------Start Header Style All Pages------------*/
 .landing-img-fix {
-    position: relative;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 70vh;
-    z-index: -1;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 70vh;
+  z-index: -1;
 }
 
 .img-box-fix {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .img-fixed {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/all-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/all-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .bg-dark-opacity {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 0;
 }
 
 .header-title-pages {
-    width: 100%;
-    position: absolute;
-    top: 40%;
-    z-index: 1;
-    color: white;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  color: white;
 }
 
+                     /* Extra small devices (phones, 568px and down) */
+@media screen and (max-width: 568px) {
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .carousel-indicators [data-bs-target] {
+    border: 1px solid white;
+    width: 8px;
+    height: 25px;
+  }
+  .icon-img {
+    width: 50px;
+    height: 50px;
+  }
+  .about-us-box {
+    padding: 60px;
+  }
+  .box-title h1 {
+    font-size: 1.2vm;
+  }
+  .box-title p {
+    display: none;
+  }
+}
 
-@media screen and (max-width:992px) {
-    .icon-img{
-        width: 100px;
-        height: 100px;
+                        /* Small devices (portrait tablets and large phones, 568px and up) */
+@media screen and (min-width: 568px) {
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .carousel-indicators [data-bs-target] {
+    border: 1px solid white;
+    width: 8px;
+    height: 25px;
+  }
+  .icon-img {
+    width: 80px;
+    height: 80px;
+  }
+  .about-us-box {
+    padding: 60px;
+  }
+  .box-title h1 {
+    font-size: 1.2vm;
+  }
+  .box-title p {
+    font-size: 1rem;
+  }
+}
+
+              /* Medium , Large , Extra large devices (landscape tablets,laptops/desktops,large laptops and desktops, 768px and up) */
+@media screen and (min-width: 768px) {
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      width: 40px;
+      height: 40px;
+    }
+    .carousel-indicators [data-bs-target] {
+      border: 1px solid white;
+      width: 12px;
+      height: 45px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    .icon-img {
+      width: 120px;
+      height: 120px;
+    }
+    .box-title h1 {
+      font-size: 2.3rem;
+      margin-bottom: 50px;
+    }
+    .box-title p {
+      font-size: 1.4rem;
     }
 }
