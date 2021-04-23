@@ -30,6 +30,7 @@
 body {
   font-family: Nazanin;
   font-weight: 600;
+  line-height: 1.6rem;
 }
 
 * h1,
@@ -51,6 +52,12 @@ h6 {
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
   background: linear-gradient(45deg, #659999, #f4791f);
+}
+
+.nav-item .active{
+  color: white;
+  font-size: 1.6rem;
+  transition: all 0.3s ease-in;
 }
 
 .carousel-indicators [data-bs-target] {
