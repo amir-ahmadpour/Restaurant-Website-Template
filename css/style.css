@@ -148,6 +148,11 @@ h6 {
   padding: 12px 12px;
   transition: all 0.3s ease;
 }
+.description h4{
+  border-bottom: 1px solid black;
+padding-bottom: 5px;
+}
+
 /*------------ Start Gallery Section Style ------------*/
 .gallery-boxes {
   border: 2px solid red !important;
@@ -323,6 +328,11 @@ h6 {
   .box-title p {
     display: none;
   }
+  .description h4,h6{
+    font-size: 1rem;
+    margin: 2px;
+    line-height: 1rem;
+  }
 }
 
 /*------------ Small devices (portrait tablets and large phones, 568px and up) ------------*/
@@ -350,6 +360,10 @@ h6 {
   }
   .box-title p {
     font-size: 1rem;
+  }
+  .description h4,p,h6{
+    margin: 5px;
+    line-height: 1.4rem;
   }
   /* Other Page Style */
   .header-title-pages{
@@ -380,5 +394,9 @@ h6 {
   }
   .box-title p {
     font-size: 1.4rem;
+  }
+  .description h4,p,h6{
+    margin: 15px;
+    line-height: 2rem;
   }
 }
